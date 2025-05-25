@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Text Highlighter",
+  "version": "1.0",
+  "description": "Highlight selected text on any webpage.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "64": "icons/icon32.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["highlight.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Highlight Selected Text"
+  }
+}
