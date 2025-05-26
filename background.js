@@ -1,5 +1,3 @@
-// background.js
-
 chrome.action.onClicked.addListener((tab) => {
   // Execute the content.js script on the current active tab
   chrome.scripting.executeScript({
