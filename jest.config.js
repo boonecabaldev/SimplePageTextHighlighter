@@ -1,0 +1,6 @@
+// jest.config.js
+module.exports = {
+  // ...existing config...
+  setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
+  // ...existing config...
+};

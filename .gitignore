@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Jest coverage output
+coverage/
+
+# Jest cache
+jest-cache/
+jest-coverage/
+*.log
+
+# VS Code settings
+.vscode/
+
+# Test output
+*.test.js.snap
+
+# npm debug log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
